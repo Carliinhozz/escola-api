@@ -14,11 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return 'hello_url : /hello';
+    return '{hello_url : /hello';
 });
 Route::get('/hello', function () {
-    return response()->json([
-        'Hello, World!',
-    ]);
+    return "Hello, World!";
 });
 
